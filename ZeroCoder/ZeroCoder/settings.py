@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "main",                            # добавляем свое приложение main
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ZeroCoder.urls'
+ROOT_URLCONF = 'ZeroCoder.urls'       # главный адрес проекта
 
 TEMPLATES = [
     {
