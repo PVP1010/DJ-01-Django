@@ -8,4 +8,4 @@ def index(request):
     return render(request, 'main/index.html')
 
 def new(request):
-    return HttpResponse("<h1>Это вторая страница мого проекта на Django</h1>")
+    return render(request, 'main/new.html')
