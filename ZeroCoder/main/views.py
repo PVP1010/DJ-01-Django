@@ -8,3 +8,9 @@ def index(request):
 
 def new(request):
     return HttpResponse("<h1>Это вторая страница мого проекта на Django</h1>")
+
+def data(request):
+    return HttpResponse("<h1>Домашнее задание. Страница data мого проекта на Django</h1>")
+
+def test(request):
+    return HttpResponse("<h1>Домашнее задание. Страница test мого проекта на Django</h1>")
