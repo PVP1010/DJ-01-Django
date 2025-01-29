@@ -1,0 +1,51 @@
+    <!-- Дополнительные стили -->
+<style>
+        body {
+            display: flex;
+        }
+        aside {
+            width: 250px;
+            background-color: #343a40; /* Тёмный фон для бокового меню */
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+        }
+        aside img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        aside span {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        aside ul li {
+            margin: 10px 0;
+        }
+        aside ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        aside ul li a:hover {
+            background-color: #495057;
+        }
+        main {
+            margin-left: 270px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+    </style>
