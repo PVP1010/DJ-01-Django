@@ -5,7 +5,10 @@ from django.http import HttpResponse
 # 3 на главной странице будет выводится данный текст
 
 def index(request):
-    return render(request, 'main/index.html')
+    data= {
+        "caption": "DjangoCosmos"
+    }
+    return render(request, 'main/index.html', data)
 
 def new(request):
     return render(request, 'main/new.html')
