@@ -1,51 +1,110 @@
-    <!-- Дополнительные стили -->
 <style>
+    body {
+        display: flex;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa; /* Светлый фон для основного контента */
+    }
+
+    aside {
+        width: 250px;
+        background: linear-gradient(180deg, #343a40, #2c3136); /* Градиентный фон */
+        color: white;
+        height: 100vh;
+        padding: 20px;
+        position: fixed;
+        box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2); /* Тень для бокового меню */
+    }
+
+    aside img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%; /* Круглое изображение */
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border: 3px solid #fff; /* Белая рамка */
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Тень вокруг изображения */
+    }
+
+    aside span {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 15px;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень для текста */
+    }
+
+    aside ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    aside ul li {
+        margin: 15px 0;
+    }
+
+    aside ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    }
+
+    aside ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Изменение фона при наведении */
+        transform: translateX(5px); /* Сдвиг вправо при наведении */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+    }
+
+    main {
+        margin-left: 270px;
+        padding: 30px;
+        flex-grow: 1;
+        background-color: #fff; /* Белый фон для основного контента */
+        border-radius: 10px; /* Закруглённые углы */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Тень для основного контента */
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 768px) {
         body {
-            display: flex;
+            flex-direction: column;
         }
+
         aside {
-            width: 250px;
-            background-color: #343a40; /* Тёмный фон для бокового меню */
-            color: white;
-            height: 100vh;
-            padding: 20px;
-            position: fixed;
-        }
-        aside img {
-            display: block;
-            margin: 0 auto;
-            border-radius: 10px;
-        }
-        aside span {
-            display: block;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        aside ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-        aside ul li {
-            margin: 10px 0;
-        }
-        aside ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            display: block;
+            width: 100%;
+            height: auto;
+            position: relative;
             padding: 10px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
         }
-        aside ul li a:hover {
-            background-color: #495057;
+
+        aside img {
+            width: 80px;
+            height: 80px;
         }
+
+        aside span {
+            font-size: 20px;
+        }
+
+        aside ul li a {
+            font-size: 16px;
+        }
+
         main {
-            margin-left: 270px;
+            margin-left: 0;
+            margin-top: 20px;
             padding: 20px;
-            flex-grow: 1;
         }
-    </style>
+    }
+</style>

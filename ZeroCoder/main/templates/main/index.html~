@@ -7,6 +7,5 @@
 
 
 {% block content %}
-    {% include 'main/nav.html' %}
     <h1>Урок 2 по изучению фреймворка Django</h1>
 {% endblock %}
